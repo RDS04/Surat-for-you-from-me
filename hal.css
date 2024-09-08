@@ -134,29 +134,7 @@ video {
     .Confes img {
         height: 200px;
         /* padding-top: 70%; */
-        margin-top: 1200px;
-    }
-
-    .Confes h2 {
-        font-size: 15px;
-    }
-
-    .Confes p {
-        font-size: 14px;
-    }
-    .bunga img{
-        height: 75px;
-    }
-}
-@media (max-width: 412px) {
-    .Confes {
-        padding: 10px;
-    }
-
-    .Confes img {
-        height: 200px;
-        /* padding-top: 70%; */
-        margin-top: 1200px;
+        margin-top: 520%;
     }
 
     .Confes h2 {
