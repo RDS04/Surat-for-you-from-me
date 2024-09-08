@@ -1,0 +1,172 @@
+/* Base Styles for Halaman 2 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 181, 181);
+    position: relative;
+    flex-direction: column;
+}
+.bunga {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: bunga 1.5s infinite;
+    
+}
+@keyframes bunga {
+    0%,100%{
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+.bunga-left {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.bunga-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
+}
+.Confes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    max-width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Confes img {
+    height: 250px;
+    width: auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.Confes img:hover {
+    transform: scale(1.05);
+}
+
+.Confes h2 {
+    font-size: 19px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    text-align: justify;
+}
+
+.Confes p {
+    font-size: 16px;
+    margin-top: 70px;
+}
+video {
+    display: none;
+}
+
+.Confes a{
+    background-color: #d49e9e;
+    padding: 10px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(151, 150, 150);
+}
+.Confes a:hover{
+    padding: 9px 19px;
+    transition: transform 0.3s ease;
+}
+.Confes .note {
+    font-family: none;
+    font-weight: none;
+    font-style: italic;
+    color: rgb(116, 112, 112);
+    font-size: 15px;
+    /* margin-top: 300px;   */
+
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .Confes {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .Confes img {
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    .Confes h2 {
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .Confes {
+        padding: 10px;
+    }
+
+    .Confes img {
+        height: 200px;
+        /* padding-top: 70%; */
+        margin-top: 1200px;
+    }
+
+    .Confes h2 {
+        font-size: 15px;
+    }
+
+    .Confes p {
+        font-size: 14px;
+    }
+    .bunga img{
+        height: 75px;
+    }
+}
+@media (max-width: 412px) {
+    .Confes {
+        padding: 10px;
+    }
+
+    .Confes img {
+        height: 200px;
+        /* padding-top: 70%; */
+        margin-top: 1200px;
+    }
+
+    .Confes h2 {
+        font-size: 15px;
+    }
+
+    .Confes p {
+        font-size: 14px;
+    }
+    .bunga img{
+        height: 75px;
+    }
+}
